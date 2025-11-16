@@ -1,0 +1,301 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>University Website</title> 
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css"> 
+    <style> 
+        body { 
+            font-family: 'Arial', sans-serif; 
+            line-height: 1.6; 
+        } 
+        .navbar { 
+            background-color: rgba(0, 0, 0, 0.5); 
+            width: 100%;  
+            position: absolute; 
+            font-size: 1.1rem; 
+            font-weight: 700; 
+            top: 0; 
+            left: 0; 
+        } 
+        .navbar a { 
+            margin-right: 40px; 
+        } 
+
+        .navbar-nav .nav-link:hover { 
+            color: #fff;  
+        } 
+        .hero img { 
+            height: 100vh; 
+            object-fit: cover; 
+        } 
+        .content-section { 
+            padding: 40px 0; 
+            border-bottom: 3px solid #999999; 
+        } 
+        .content-section h2 { 
+            margin-bottom: 20px; 
+            color: #2c3e50; 
+        } 
+        .content-section ul { 
+            margin-left: 20px; 
+        } 
+        .img-container img { 
+            width: 80%; 
+            height: 25vh;  
+            object-fit: cover; 
+            border-radius: 8px; 
+        } 
+        .faq-section .card-header { 
+            background: #f8f9fa; 
+        } 
+        .event-gallery .img-container { 
+            transition: transform 0.3s ease; 
+        } 
+        .event-gallery .img-container:hover { 
+            transform: scale(1.05); 
+        } 
+        .recruiter-img { 
+            width: 20vw; 
+        } 
+        .recruiter-img img { 
+            width: 100%; 
+            object-fit: cover; 
+        } 
+        footer { 
+            background: #343a40; 
+            color: white; 
+            padding: 20px 0; 
+            text-align: center; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <nav class="navbar navbar-expand-lg navbar-light"> 
+        <a class="navbar-brand" href="#"> 
+            <img src="marwadiLogo.png" alt="Logo" width="150"> 
+        </a> 
+        <div class="collapse navbar-collapse" id="navbarNav"> 
+            <ul class="navbar-nav ml-auto"> 
+                <li class="nav-item"> 
+                    <a class="nav-link" href="#">Vision</a> 
+                </li> 
+                <li class="nav-item"> 
+                    <a class="nav-link" href="#">Mission</a> 
+                </li> 
+                <li class="nav-item"> 
+                    <a class="nav-link" href="#">Program Outcomes</a> 
+                </li> 
+                <li class="nav-item"> 
+                    <a class="nav-link" href="#">Courses Offered</a> 
+                </li> 
+                <li class="nav-item"> 
+                    <a class="nav-link" href="#">Top Recruiters</a> 
+                </li> 
+            </ul> 
+        </div> 
+    </nav> 
+    <section class="hero"> 
+        <img src="marwadiBackLogo.png" alt="Hero Image" class="img-fluid w-100 h-100"> 
+    </section> 
+    <section class="content-section"> 
+        <div class="container"> 
+            <h2>Our Vision</h2> 
+            <p>To foster an environment that empowers people, organisations and societies through education, ideas, research and training.</p> 
+        </div> 
+    </section> 
+    <section class="content-section"> 
+        <div class="container"> 
+            <h2>Our Mission</h2> 
+            <ul style="list-style-type: circle;"> 
+                <li>To provide quality education and thereby bring social transformation.</li> 
+                <li>To create leaders through innovation and entrepreneurship.</li> 
+                <li>To cultivate the culture of research advancements.</li> 
+                <li>To imbibe universal consciousness.</li> 
+                <li>To stimulate growth through industrial and international partnerships.</li> 
+            </ul> 
+        </div> 
+    </section> 
+    <section class="content-section"> 
+        <div class="container"> 
+            <h2>Program Outcomes</h2> 
+            <ul style="list-style-type: square;"> 
+                <li>Tackle with the day to day digital needs of life.</li> 
+                <li>Apply the knowledge of mathematics and computing.</li> 
+                <li>Analyze the problem domain, identify and devise appropriate solutions.</li> 
+                <li>Analyze data, apply technical tools and come to the required results.</li> 
+                <li>Lay strong foundation of innovative learning and creative ideas.</li> 
+            </ul> 
+        </div> 
+    </section> 
+    <section class="faq-section container my-5"> 
+        <h2 class="mb-4">Courses Offered</h2> 
+        <div class="accordion" id="faqAccordion" style="max-width: 80%;"> 
+            <div class="card"> 
+                <div class="card-header" id="headingOne"> 
+                    <h2 class="mb-0"> 
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> 
+                            Undergraduate Programmes 
+                        </button> 
+                    </h2> 
+                </div> 
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion"> 
+                    <div class="card-body"> 
+                        <ul style="list-style-type: decimal;"> 
+                            <li>Engineering</li> 
+                            <li>Bachelor of Science (B.Sc)</li>   
+                            <li>Business Management</li> 
+                            <li>Computer Application</li> 
+                            <li>Commerce</li> 
+                            <li>Law</li> 
+                            and much more... 
+                        </ul> 
+                    </div> 
+                </div> 
+            </div> 
+            <div class="card"> 
+                <div class="card-header" id="headingTwo"> 
+                    <h2 class="mb-0"> 
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> 
+                            Postgraduate Programmes 
+                        </button> 
+                    </h2> 
+                </div> 
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion"> 
+                    <div class="card-body"> 
+                        <ul style="list-style-type: decimal;"> 
+                            <li>Engineering</li> 
+                            <li>Science</li> 
+                            <li>Business Management</li> 
+                            <li>Computer Application</li> 
+                            <li>Computer Science</li> 
+                            <li>M Pharm</li> 
+                            and much more... 
+                        </ul> 
+                    </div> 
+                </div> 
+            </div> 
+            <div class="card"> 
+                <div class="card-header" id="headingThree"> 
+                    <h2 class="mb-0"> 
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> 
+                            Research & Innovation 
+                        </button> 
+                    </h2> 
+                </div> 
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion"> 
+                    <div class="card-body"> 
+                        <ul style="list-style-type: decimal;"> 
+                            <li>Research & Innovation</li> 
+                            <li>Research & Development</li> 
+                            <li>Doctor of Philosophy (PhD)</li> 
+                            <li>Advanced Labs & Research Facilities</li> 
+                            and much more... 
+                        </ul> 
+                    </div> 
+                </div> 
+
+            </div> 
+            <div class="card"> 
+                <div class="card-header" id="headingFour"> 
+                    <h2 class="mb-0"> 
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"> 
+                            Diploma & Certifications 
+                        </button> 
+                    </h2> 
+                </div> 
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion"> 
+                    <div class="card-body"> 
+                        <ul style="list-style-type: decimal;"> 
+                            <li>Diploma Programmes</li> 
+                            <li>Certification Programmes</li> 
+                            <li>Vocational Courses</li> 
+                            and much more... 
+                        </ul> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </section> 
+<section class="event-gallery py-5"> 
+    <div class="container"> 
+        <h2 class="text-center mb-4">Event Gallery</h2> 
+        <div class="row"> 
+            <div class="col-md-4 mb-4"> 
+                <div class="img-container text-center"> 
+                    <img src="https://images.shiksha.com/mediadata/images/articles/1700041939phpkM5omN.jpeg" alt="Picture 01" class="img-fluid"> 
+                    <p>Picture 01</p> 
+                </div> 
+            </div> 
+            <div class="col-md-4 mb-4"> 
+                <div class="img-container text-center"> 
+                    <img src="https://i.pinimg.com/736x/78/ac/61/78ac6119ca4a7639fea547b8994ddc0d.jpg" alt="Picture 02" class="img-fluid"> 
+                    <p>Picture 02</p> 
+                </div> 
+            </div> 
+            <div class="col-md-4 mb-4"> 
+                <div class="img-container text-center"> 
+                    <img src="https://www.monarch-innovation.com/wp-content/uploads/2023/01/MPL-Runner-Up.jpg" alt="Picture 03" class="img-fluid"> 
+                    <p>Picture 03</p> 
+                </div> 
+            </div> 
+            <div class="col-md-4 mb-4"> 
+                <div class="img-container text-center">  
+                    <img src="https://i.pinimg.com/736x/78/ac/61/78ac6119ca4a7639fea547b8994ddc0d.jpg" alt="Picture 04" class="img-fluid"> 
+                    <p>Picture 04</p> 
+                </div> 
+            </div> 
+            <div class="col-md-4 mb-4"> 
+                <div class="img-container text-center"> 
+                    <img src="https://www.monarch-innovation.com/wp-content/uploads/2023/01/MPL-Runner-Up.jpg" alt="Picture 05" class="img-fluid"> 
+                    <p>Picture 05</p> 
+                </div> 
+            </div> 
+            <div class="col-md-4 mb-4"> 
+                <div class="img-container text-center"> 
+                    <img src="https://images.shiksha.com/mediadata/images/articles/1700041939phpkM5omN.jpeg" alt="Picture 06" class="img-fluid"> 
+                    <p>Picture 06</p> 
+                </div> 
+            </div> 
+        </div> 
+    </div> 
+</section> 
+<section class="top-recruiters py-5"> 
+    <div class="container"> 
+        <h2 class="text-center mb-4">Top Recruiters</h2> 
+        <div class="row"> 
+            <div class="col-md-4 mb-4 text-center"> 
+                <img src="https://th.bing.com/th/id/OIP.vCWjopgKUSXZD0CQBCENCAHaCi?rs=1&pid=ImgDetMain" alt="Recruiter 01" class="img-fluid mb-3" style="padding: 10px;"> 
+            </div> 
+            <div class="col-md-4 mb-4 text-center"> 
+                <img src="https://1000logos.net/wp-content/uploads/2016/11/google-logo.jpg" alt="Recruiter 02" class="img-fluid mb-3" style="padding: 10px;"> 
+            </div> 
+            <div class="col-md-4 mb-4 text-center"> 
+                <img src="https://wallpapercave.com/wp/wp6214986.jpg" alt="Recruiter 03" class="img-fluid mb-3" style="padding: 10px;"> 
+            </div> 
+            <div class="col-md-4 mb-4 text-center"> 
+                <img src="https://res.cloudinary.com/teepublic/image/private/s--2gTHLdCu--/t_Preview/b_rgb:ffffff,c_lpad,f_jpg,h_630,q_90,w_1200/v1545581975/production/designs/3810271_0.jpg" alt="Recruiter 04" class="img-fluid mb-3" style="padding: 10px;"> 
+            </div> 
+            <div class="col-md-4 mb-4 text-center"> 
+                <img src="https://listcarbrands.com/wp-content/uploads/2017/10/Tata-Motors-Logo.png" alt="Recruiter 05" class="img-fluid mb-3" style="padding: 10px;"> 
+            </div> 
+            <div class="col-md-4 mb-4 text-center"> 
+                <img src="https://zeevector.com/wp-content/uploads/Infosys-Logo-PNG-Transparent@zeevector.png" alt="Recruiter 06" class="img-fluid mb-3" style="padding: 10px;"> 
+            </div> 
+        </div> 
+    </div> 
+</section> 
+
+<footer class="footer bg-dark text-white py-3"> 
+    <div class="container text-center"> 
+        <p>&copy; 2023 University Name. All Rights Reserved.</p> 
+    </div> 
+</footer> 
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+</body> 
+</html>
